@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0f1a;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(90deg, #050816, #0d1326, #050816);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00c3ff;
+    box-shadow: 0 0 20px rgba(0, 195, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #00c3ff;
+    text-shadow: 0 0 12px rgba(0, 195, 255, 0.8);
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00c3ff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00c3ff;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+/* BANNER */
+
+.banner {
+    width: 100%;
+    padding: 40px 8%;
+    text-align: center;
+    background: linear-gradient(180deg, #0f172d, #09101f);
+}
+
+.banner img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #00c3ff;
+    box-shadow: 0 0 30px rgba(0, 195, 255, 0.4);
+    margin-bottom: 25px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    color: #d8e8ff;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TÍTULOS */
+
+section h2 {
+    font-size: 2rem;
+    color: #00c3ff;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+}
+
+/* LINHAS */
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #00c3ff, transparent);
+    margin: 40px auto;
+    width: 85%;
+}
+
+/* CARDS */
+
+.container-cards {
+    width: 100%;
+    padding: 20px 8% 40px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+.card {
+    background: linear-gradient(180deg, #111827, #0b1220);
+    width: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 195, 255, 0.4);
+    transition: 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 195, 255, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 2px solid #00c3ff;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #00c3ff;
+    margin: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.card p {
+    margin: 0 20px 25px;
+    color: #d5d9e2;
+    font-size: 0.95rem;
+}
+
+/* LISTAS */
+
+#ListaU,
+#Dias {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    background: #101827;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 195, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#ListaU li,
+#Dias li {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: #dce7ff;
+}
+
+/* SOBRE */
+
+section p {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: #dce7ff;
+    font-size: 1.05rem;
+}
+
+/* LINKS */
+
+section a {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(90deg, #007cf0, #00dfd8);
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+section a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 223, 216, 0.5);
+}
+
+/* CENTRALIZA LINKS */
+
+section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    background: #050816;
+    padding: 25px;
+    text-align: center;
+    border-top: 2px solid #00c3ff;
+}
+
+footer p {
+    color: #9fb5d1;
+    font-size: 0.95rem;
+}
+
+/* CONTATO */
+
+.contato {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    background-color: #101827;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    color: #00c3ff;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #00c3ff;
+    background-color: #0b0f1a;
+    color: white;
+}
+
+.campo textarea {
+    resize: none;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00c3ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #00a2d6;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner p,
+    section p {
+        width: 90%;
+    }
+
+    #ListaU,
+    #Dias {
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .formulario {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .logo h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .banner img {
+        max-height: 250px;
+    }
+}
+
